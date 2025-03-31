@@ -8,11 +8,19 @@ import os
 from .api import endpoints
 from .db.database import Database
 
+import secrets
+import os
+# 生成一个安全的随机密钥
+secret_key = secrets.token_urlsafe(32)  # 32 字节的密钥
+# 设置环境变量 (仅仅示例，实际部署不要硬编码)
+os.environ["MIDDLEWARE_SECRET_KEY"] = secret_key
+
 app = FastAPI(title="ragchat")
 app.add_middleware(
     SessionMiddleware,
     secret_key=os.getenv("MIDDLEWARE_SECRET_KEY"),
 )
+
 app.router.timeout = 300
 app.include_router(endpoints.router, prefix="/api/v1", tags=["files"])
 app.mount("/static", StaticFiles(directory="static"), name="static")
