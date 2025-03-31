@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -14,7 +14,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>随便问我什么！</title>
+    <title>Ask me anything!</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
@@ -50,7 +50,7 @@
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div class="d-flex align-items-center gap-2">
                             <i class="bi bi-folder empty-folder"></i>
-                            <span class="d-xl-block selected-domain-text">选择领域</span>
+                            <span class="d-xl-block selected-domain-text">Select Domain</span>
                         </div>
                         <i class="bi bi-gear settings-icon"></i>
                     </div>
@@ -62,10 +62,10 @@
                     </div>
                     <div class="file-add">
                         <button class="open-file-btn">
-                            上传文件
+                            Upload Files
                         </button>
                         <p class="helper-text">
-                            请先选择领域以上传文件
+                            Select your domain first to upload files
                         </p>
                     </div>
 
@@ -74,33 +74,33 @@
 
                 <div class="bottom-section mt-auto">
                     <div class="text-center mb-3">
-                        <span class="plan-badge d-xl-block">免费计划</span>
+                        <span class="plan-badge d-xl-block">Free Plan</span>
                     </div>
                     <div class="user-section d-flex align-items-center gap-3 mb-3" role="button" id="userProfileMenu">
-                        <div class="user-avatar">伊</div>
+                        <div class="user-avatar">İ</div>
                         <div class="user-info d-xl-block">
                             <div class="user-email">ibrahimyasing@gmail.com</div>
-                            <div class="user-status">在线</div>
+                            <div class="user-status">Online</div>
                         </div>
                         <div class="user-menu">
                             <div class="menu-item">
                                 <i class="bi bi-person-circle"></i>
-                                个人资料
+                                Profile
                             </div>
                             <div class="menu-item">
                                 <i class="bi bi-gear"></i>
-                                设置
+                                Settings
                             </div>
                             <div class="menu-divider"></div>
                             <div class="menu-item logout-item">
                                 <i class="bi bi-box-arrow-right"></i>
-                                登出
+                                Logout
                             </div>
                         </div>
                     </div>
                     <div class="bottom-links justify-content-center">
-                        <a href="#" class="premium-link">升级至高级版！</a>
-                        <a href="#">反馈</a>
+                        <a href="#" class="premium-link">Go Premium!</a>
+                        <a href="#">Feedback</a>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                         <button class="menu-trigger">
                             <i class="bi bi-list"></i>
                         </button>
-                        <h2 class="header-title m-0">聊天</h2>
+                        <h2 class="header-title m-0">Chat</h2>
                         <!-- Resources butonu eklendi -->
                         <button class="resources-trigger d-lg-none">
                             <i class="bi bi-box-arrow-in-right"></i>
@@ -133,10 +133,10 @@
                     <div class="message-container">
                         <div class="sources-box" data-count="0">
                             <span class="sources-number">0</span>
-                            <span class="sources-text">来源</span>
+                            <span class="sources-text">Sources</span>
                         </div>
                         <div class="message-input-container">
-                            <input type="text" class="message-input" placeholder="寻找你的答案..."
+                            <input type="text" class="message-input" placeholder="Find your answer..."
                                 aria-label="Message">
                             <button class="send-button">
                                 <i class="bi bi-arrow-right send-icon"></i>
@@ -154,14 +154,14 @@
                 <!-- Resources Header -->
                 <div class="top-header">
                     <div class="d-flex align-items-center justify-content-center h-100 py-3">
-                        <h2 class="header-title m-0">资源</h2>
+                        <h2 class="header-title m-0">Resources</h2>
                     </div>
                 </div>
                 
                 <div class="resource-content flex-grow-1 overflow-auto px-4">
                     <div class="resources-list">
                         <div class="resources-placeholder">
-                            文档来源和页面引用将在此处显示
+                            Document sources and page references will appear here
                         </div>
                     </div>
                     
@@ -177,7 +177,7 @@
             <div class="modal-content">
                 <div class="domain-modal-wrapper">
                     <div class="domain-header">
-                        <h5>选择领域</h5>
+                        <h5>Select Domain</h5>
                         <button type="button" class="close-button" data-bs-dismiss="modal">
                             <i class="bi bi-x"></i>
                         </button>
@@ -185,7 +185,7 @@
 
                     <div class="domain-search">
                         <i class="bi bi-search"></i>
-                        <input type="text" placeholder="搜索领域..." class="domain-search-input"
+                        <input type="text" placeholder="Search domains..." class="domain-search-input"
                             id="domainSearchInput">
                     </div>
 
@@ -195,11 +195,11 @@
 
                     <button class="new-domain-button" id="newDomainBtn">
                         <i class="bi bi-plus-circle"></i>
-                        创建新领域
+                        Create New Domain
                     </button>
 
                     <button class="select-button">
-                        选择领域
+                        Select Domain
                     </button>
                 </div>
             </div>
@@ -210,11 +210,11 @@
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
                 <div class="domain-modal-wrapper text-center">
-                    <h6 class="mb-3">删除领域？</h6>
-                    <p class="text-secondary mb-4">确定要删除此领域吗？</p>
+                    <h6 class="mb-3">Delete Domain?</h6>
+                    <p class="text-secondary mb-4">Are you sure you want to delete this domain?</p>
                     <div class="d-flex gap-3">
-                        <button class="btn btn-outline-secondary flex-grow-1" data-bs-dismiss="modal">取消</button>
-                        <button class="btn btn-danger flex-grow-1" id="confirmDeleteBtn">删除</button>
+                        <button class="btn btn-outline-secondary flex-grow-1" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-danger flex-grow-1" id="confirmDeleteBtn">Delete</button>
                     </div>
                 </div>
             </div>
@@ -224,7 +224,7 @@
     <!-- Template for new domain input -->
     <template id="newDomainInputTemplate">
         <div class="domain-card new-domain-input-card">
-            <input type="text" class="new-domain-input" placeholder="输入领域名称" autofocus>
+            <input type="text" class="new-domain-input" placeholder="Enter domain name" autofocus>
             <div class="new-domain-actions">
                 <button class="confirm-button"><i class="bi bi-check"></i></button>
                 <button class="cancel-button"><i class="bi bi-x"></i></button>
@@ -237,7 +237,7 @@
                 <div class="domain-modal-wrapper">
                     <div class="modal-header border-0 d-flex align-items-center">
                         <div>
-                            <h6 class="mb-0">已选择领域： <span class="domain-name text-primary-green text-truncate"></span></h6>
+                            <h6 class="mb-0">Selected Domain: <span class="domain-name text-primary-green text-truncate"></span></h6>
                         </div>
                         <button type="button" class="close-button" data-bs-dismiss="modal">
                             <i class="bi bi-x"></i>
@@ -254,15 +254,15 @@
                                         <i class="bi bi-cloud-upload text-primary-green"></i>
                                     </div>
                                 </div>
-                                <h5 class="mb-2">上传文件</h5>
-                                <p class="mb-3">拖放或 <span class="text-primary-green choose-text">选择文件</span> 以上传</p>
-                                <small class="text-secondary">支持的文件类型：PDF、DOCX 和 TXT</small>
+                                <h5 class="mb-2">Upload Files</h5>
+                                <p class="mb-3">Drag & drop or <span class="text-primary-green choose-text">choose files</span> to upload</p>
+                                <small class="text-secondary">Supported file types: PDF, DOCX and TXT</small>
                                 <input type="file" id="fileInput" multiple accept=".pdf,.docx,.txt" class="d-none">
                             </div>
                         </div>
 
                         <button class="upload-btn mt-3" id="uploadBtn" disabled>
-                            上传
+                            Upload
                             <div class="upload-progress">
                                 <div class="progress-bar"></div>
                             </div>
@@ -277,55 +277,55 @@
             <div class="alert-icon">
                 <i class="bi bi-gem text-primary-green"></i>
             </div>
-            <h5 class="alert-title">暂无高级计划！</h5>
-            <p class="alert-message">我们目前没有高级计划。您可以免费使用 ragchat！请不要忘记向我们发送您的反馈！</p>
-            <button class="alert-button">知道了！</button>
+            <h5 class="alert-title">No Premium Plan Yet!</h5>
+            <p class="alert-message">We don't have a premium plan yet. You can you ragchat for free! Just don't forget to send us your feedbacks!</p>
+            <button class="alert-button">Got it!</button>
         </div>
     </div>
     <!-- Feedback Modal -->
     <div id="feedback-modal" class="feedback-modal">
         <div class="feedback-modal-content">
             <div class="feedback-modal-header">
-                <h3>发送反馈</h3>
+                <h3>Send Feedback</h3>
                 <button class="close-modal">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="feedback-modal-description">
-                <p>您的反馈确实能帮助我们变得更好！</p>
-                <p>请按照以下步骤操作：</p>
+                <p>Your feedback really helps us get better!</p>
+                <p>Please follow these steps:</p>
                 <ol>
-                    <li>选择您的反馈类型</li>
-                    <li>添加您的描述</li>
-                    <li>如果有助于更好地解释，请附加屏幕截图</li>
+                    <li>Select the type of your feedback</li>
+                    <li>Add your description</li>
+                    <li>If it helps explain better, attach a screenshot</li>
                 </ol>
             </div>
             <div class="feedback-modal-body">
                 <form id="feedback-form" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="feedback-type">类型</label>
+                        <label for="feedback-type">Type</label>
                         <select 
                             id="feedback-type" 
                             name="feedback_type"
                             class="form-control"
                         >
-                            <option value="general">一般反馈</option>
-                            <option value="bug">错误报告</option>
-                            <option value="feature">功能请求</option>
+                            <option value="general">General Feedback</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="feature">Feature Request</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="feedback-description">描述</label>
+                        <label for="feedback-description">Description</label>
                         <textarea 
                             id="feedback-description"
                             name="feedback_description"
                             class="form-control" 
                             rows="4" 
-                            placeholder="请描述您的反馈或问题..."
+                            placeholder="Please describe your feedback or issue..."
                         ></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="feedback-screenshot">屏幕截图 (可选)</label>
+                        <label for="feedback-screenshot">Screenshot (Optional)</label>
                         <input 
                             type="file" 
                             id="feedback-screenshot"
@@ -333,11 +333,11 @@
                             class="form-control" 
                             accept="image/*"
                         >
-                        <small class="form-text">最大尺寸：2MB</small>
+                        <small class="form-text">Max size: 2MB</small>
                     </div>
                     <div class="feedback-modal-footer">
-                        <button type="button" class="btn-cancel close-modal">取消</button>
-                        <button type="submit" class="btn-submit">提交反馈</button>
+                        <button type="button" class="btn-cancel close-modal">Cancel</button>
+                        <button type="submit" class="btn-submit">Submit Feedback</button>
                     </div>
                 </form>
             </div>
@@ -348,9 +348,9 @@
             <div class="alert-icon">
                 <i class="bi bi-check-circle text-primary-green"></i>
             </div>
-            <h5 class="alert-title">谢谢！</h5>
-            <p class="alert-message">您的反馈已成功提交。感谢您帮助 ragchat 变得更好！</p>
-            <button class="alert-button">知道了！</button>
+            <h5 class="alert-title">Thank You!</h5>
+            <p class="alert-message">Your feedback has been successfully submitted. We appreciate your help in making ragchat better!</p>
+            <button class="alert-button">Got it!</button>
         </div>
     </div>
 
@@ -359,11 +359,11 @@
             <div class="alert-icon">
                 <i class="bi bi-box-arrow-right text-primary-green"></i>
             </div>
-            <h5 class="alert-title">登出 ragchat？</h5>
-            <p class="alert-message">您可以随时重新登录。</p>
+            <h5 class="alert-title">Log out of ragchat?</h5>
+            <p class="alert-message">You can always log back in at any time.</p>
             <div class="d-flex flex-column gap-2 w-100">
-                <button class="alert-button">登出</button>
-                <button class="btn-cancel">取消</button>
+                <button class="alert-button">Log out</button>
+                <button class="btn-cancel">Cancel</button>
             </div>
         </div>
     </div>
@@ -373,7 +373,7 @@
             <div class="modal-content">
                 <div class="domain-modal-wrapper">
                     <div class="modal-header border-0">
-                        <h5 class="modal-title">您如何评价 ragchat？</h5>
+                        <h5 class="modal-title">How would you rate ragchat?</h5>
                         <button type="button" class="close-button" data-bs-dismiss="modal">
                             <i class="bi bi-x"></i>
                         </button>
@@ -389,10 +389,10 @@
                             </div>
                         </div>
                         <div class="feedback-container">
-                            <textarea class="feedback-input" placeholder="分享您的想法..."></textarea>
+                            <textarea class="feedback-input" placeholder="Share your thoughts..."></textarea>
                         </div>
                         <div class="text-center">
-                            <button class="submit-button">提交</button>
+                            <button class="submit-button">Submit</button>
                         </div>
                     </div>
                 </div>
