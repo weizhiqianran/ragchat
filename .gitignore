@@ -84,3 +84,5 @@ venv/
 # Database
 db_local/
 *.ini
+redis-data/
+postgres-data/
